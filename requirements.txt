@@ -1,0 +1,8 @@
+streamlit
+pandas
+plotly.express
+plotly.graph_objects
+numpy
+scipy
+sympy
+math
