@@ -1,7 +1,6 @@
 streamlit
 pandas
-plotly.express
-plotly.graph_objects
+plotly
 numpy
 scipy
 sympy
