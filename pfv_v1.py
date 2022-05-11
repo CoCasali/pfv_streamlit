@@ -65,10 +65,10 @@ st.title("Analyse d'un fichier de sprint - Profil Force-Vitesse")
 st.markdown('*version 1.0 - création Corentin Casali*')
 st.markdown("Application permettant le traitement d'un fichier .xls déjà traité avec une macro VBA pour la comparaison entre l'utilisation de cette même macro VBA sur la détection et la prédiction de valeur de Pmax par rapport à un script python.")
 
-uploaded_file = st.file_uploader(label = "Choisir un fichier", engine='openpyxl')
+uploaded_file = st.file_uploader(label = "Choisir un fichier")
 if uploaded_file is not None:
-    data = pd.read_excel(uploaded_file, sheet_name = "DATA_CALC",header=1)
-    data2 = pd.read_excel(uploaded_file, sheet_name = "DEMI_CYCLES")
+    data = pd.read_excel(uploaded_file, sheet_name = "DATA_CALC",header=1, engine = "openpyxl")
+    data2 = pd.read_excel(uploaded_file, sheet_name = "DEMI_CYCLES",engine = "openpyxl")
     st.markdown("## Lecture du fichier :")
     st.write(data)
 
