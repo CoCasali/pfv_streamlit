@@ -67,8 +67,8 @@ st.markdown("Application permettant le traitement d'un fichier .xls déjà trait
 
 uploaded_file = st.file_uploader("Choisir un fichier")
 if uploaded_file is not None:
-    data = pd.read_excel(uploaded_file, sheet_name = "DATA_CALC",header=1)
-    data2 = pd.read_excel(uploaded_file, sheet_name = "DEMI_CYCLES")
+    data = pd.read_excel(uploaded_file, sheet_name = "DATA_CALC",header=1, engine = 'openpyxl')
+    data2 = pd.read_excel(uploaded_file, sheet_name = "DEMI_CYCLES", engine = 'openpyxl')
     st.markdown("## Lecture du fichier :")
     st.write(data)
 
