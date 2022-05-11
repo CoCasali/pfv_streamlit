@@ -379,7 +379,7 @@ if uploaded_file is not None:
     )
 
     fig.update_layout(
-        title=f"Relation force-vitesse : {uploaded_file.name[:-4]]}",
+        title=f"Relation force-vitesse : {uploaded_file.name[:-4]}",
         title_x = 0.5,
         xaxis_title="Vitesse (rad.s-1)",
         yaxis_title="Force (N)",
