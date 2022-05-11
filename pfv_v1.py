@@ -16,7 +16,7 @@ import pathlib
 # Full size page
 st.set_page_config(
     page_title = "Profil Force-Vitesse",
-    page_icon = "🚴"
+    page_icon = "🚴",
     layout="wide")
 
 # Fonction du nouveau filtre 
