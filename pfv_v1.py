@@ -359,8 +359,8 @@ if uploaded_file is not None:
     st.markdown("## Visualisation de la relation force/vitesse")
     # Relation force-Vitesse
     fig = px.scatter(
-        x = DEMI_CYCLE["VitAng"][2:nbValeurMax+i],
-        y = DEMI_CYCLE["Force"][2:nbValeurMax+i],
+        x = DEMI_CYCLE["VitAng"][2:nbValeurMax],
+        y = DEMI_CYCLE["Force"][2:nbValeurMax],
         trendline = 'ols',
         width = 1200)
 
