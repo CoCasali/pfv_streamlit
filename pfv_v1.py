@@ -241,8 +241,8 @@ if uploaded_file is not None:
     # print("Nombre de valeurs choisies :",nbValeurMax)
 
     # Calcul de régression
-    x = DEMI_CYCLE["VitAng"][2:nbValeurMax+1]
-    y = DEMI_CYCLE["Force"][2:nbValeurMax+1]
+    x = DEMI_CYCLE["VitAng"][2:nbValeurMax]
+    y = DEMI_CYCLE["Force"][2:nbValeurMax]
     B0, B1, reg_line = linear_regression(x, y)
 
     # Calcul des différents paramètres
