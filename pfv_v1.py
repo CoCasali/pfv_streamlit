@@ -236,7 +236,7 @@ if uploaded_file is not None:
     Vmax = DEMI_CYCLE["Vitesse"][:-1].max()
     # Fixation du critère de recherche à 0.99
     CritereRecherche = 0.95
-    nbValeurMax = DEMI_CYCLE[DEMI_CYCLE["Vitesse"]>=CritereRecherche*Vmax].index[0]-1
+    nbValeurMax = DEMI_CYCLE[DEMI_CYCLE["Vitesse"]>=CritereRecherche*Vmax].index[0]
     # print("Critère de recherche de :", round(CritereRecherche*Vmax,3))
     # print("Nombre de valeurs choisies :",nbValeurMax)
 
