@@ -14,7 +14,10 @@ import os
 import pathlib
 
 # Full size page
-st.set_page_config(layout="wide")
+st.set_page_config(
+    page_title = "Profil Force-Vitesse",
+    page_icon = "🚴"
+    layout="wide")
 
 # Fonction du nouveau filtre 
 def butter_lowpass_filter(data, cutoff, fs, order):
