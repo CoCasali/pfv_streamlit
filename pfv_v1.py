@@ -361,8 +361,7 @@ if uploaded_file is not None:
     fig = px.scatter(
         x = DEMI_CYCLE["VitAng"][2:nbValeurMax+i],
         y = DEMI_CYCLE["Force"][2:nbValeurMax+i],
-        trendline = 'ols',
-        width = 1200)
+        trendline = 'ols')
 
     fig.update_yaxes(rangemode="tozero")
 
