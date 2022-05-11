@@ -379,11 +379,12 @@ if uploaded_file is not None:
     )
 
     fig.update_layout(
-        title="Relation force-vitesse",
+        title=f"Relation force-vitesse : {nomFichier[:-4]}",
+        title_x = 0.5,
         xaxis_title="Vitesse (rad.s-1)",
         yaxis_title="Force (N)",
         font=dict(
-            family="Raleway, monospace",
+            family="Verdana",
             size=16,
             color="Black"
         )
