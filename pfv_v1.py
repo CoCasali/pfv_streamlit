@@ -73,6 +73,7 @@ if uploaded_file is not None:
     data = pd.read_excel(uploaded_file, sheet_name = "DATA_CALC",header=1, engine = 'xlrd')
     data2 = pd.read_excel(uploaded_file, sheet_name = "DEMI_CYCLES", engine = 'xlrd')
     st.markdown("## Lecture du fichier :")
+    st.write("Le fichier ne prend en compte que quelques variables des résultats obtenues par la macro VBA. Plus de variables sont normalement prises dans le fichier")
     st.write(data)
 
     # Filter requirements.
