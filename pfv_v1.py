@@ -65,7 +65,7 @@ df_final = pd.DataFrame(columns=("Nom","VBA - a","VBA - b","VBA - Pmax","Python 
 
 
 st.title("Analyse d'un fichier de sprint - Profil Force-Vitesse")
-st.markdown('*version 1.0 - création Corentin Casali*')
+st.markdown('*version 1.00*')
 st.markdown("Application permettant le traitement d'un fichier .xls déjà traité avec une macro VBA pour la comparaison entre l'utilisation de cette même macro VBA sur la détection et la prédiction de valeur de Pmax par rapport à un script python.")
 
 uploaded_file = st.file_uploader("Choisir un fichier")
@@ -73,7 +73,7 @@ if uploaded_file is not None:
     data = pd.read_excel(uploaded_file, sheet_name = "DATA_CALC",header=1, engine = 'xlrd')
     data2 = pd.read_excel(uploaded_file, sheet_name = "DEMI_CYCLES", engine = 'xlrd')
     st.markdown("## Lecture du fichier :")
-    st.write("Le fichier ne prend en compte que quelques variables des résultats obtenues par la macro VBA. Plus de variables sont normalement prises dans le fichier")
+    st.write("Le fichier ne prend en compte que quelques variables des résultats obtenues par la macro VBA. Plus de variables sont normalement présentent dans le fichier")
     st.write(data)
 
     # Filter requirements.
